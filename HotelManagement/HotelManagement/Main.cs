@@ -20,18 +20,21 @@ namespace HotelManagement
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //Create a new instance of the MDI child template form
-            Form1 chForm = new Form1();
+            {
+                //Create a new instance of the MDI child template form
+                Form1 bookingForm = new Form1();
 
-            //Set parent form for the child window 
-            chForm.MdiParent = this;
+                //Set parent form for the child window 
+                bookingForm.MdiParent = this;
 
-            //Display the child window
-            chForm.Show();
+                //Display the child window
+                bookingForm.Show();
+            }
         }
 
         private void Main_Load(object sender, EventArgs e)
         {
+
         }
     }
 }
