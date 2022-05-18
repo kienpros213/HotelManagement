@@ -21,9 +21,9 @@ namespace HotelManagement
         private void button2_Click(object sender, EventArgs e)
         {
             bool isOpen = false;
-            foreach(Form f in Application.OpenForms)
+            foreach (Form f in Application.OpenForms)
             {
-                if(f.Name == "bookingForm")
+                if (f.Name == "bookingForm")
                 {
                     isOpen = true;
                     f.BringToFront();
@@ -31,12 +31,11 @@ namespace HotelManagement
                 }
             }
 
-            if(isOpen == false)
+            if (isOpen == false)
             {
-            bookingForm _bookingForm = new bookingForm();
-            _bookingForm.Show();
+                bookingForm _bookingForm = new bookingForm();
+                _bookingForm.Show();
             }
-
         }
 
         private void Main_Load(object sender, EventArgs e)

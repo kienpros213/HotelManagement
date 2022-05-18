@@ -8,7 +8,7 @@ D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\o
 D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CoreCompileInputs.cache
 D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
 D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
-D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.bookingForm.resources
 D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\bin\Debug\XanderUI.dll
 D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CopyComplete
 D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.reportForm.resources
+D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.bookingForm.resources
