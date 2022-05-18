@@ -32,7 +32,7 @@ namespace HotelManagement
                         using (DataTable dt = new DataTable())
                         {
                             sda.Fill(dt);
-                            dataGridView1.DataSource = dt;
+                            dataGridView.DataSource = dt;
                         }
                     }
                 }
@@ -41,6 +41,7 @@ namespace HotelManagement
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //sql syntax
             string sqlstring = "INSERT INTO tblCustomer(customerID,customerFName,customerLName,reservation,customerAddress,customerStatus) VALUES('"+customerID.Text+"','" + customerFName.Text + "','" + customerLName.Text + "','" + reservation.Text + "','" + customerAddress.Text + "','" + customerStatus.Text + "')";
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True");
             con.Open();
@@ -48,6 +49,19 @@ namespace HotelManagement
             command.ExecuteNonQuery();
             MessageBox.Show("success");
             con.Close();
+
+            //clear textbox
+            customerID.Clear();
+            customerFName.Clear();
+            customerLName.Clear();
+            reservation.Clear();
+            customerAddress.Clear();
+            customerStatus.Clear();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dataGridView.Refresh();
         }
     }
 }
