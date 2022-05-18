@@ -16,6 +16,27 @@ namespace HotelManagement
         public bookingForm()
         {
             InitializeComponent();
+            BindGrid();
+        }
+
+        private void BindGrid()
+        {
+            string constring = "Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True";
+            using (SqlConnection con = new SqlConnection(constring))
+            {
+                using (SqlCommand cmd = new SqlCommand("SELECT * FROM tblCustomer", con))
+                {
+                    cmd.CommandType = CommandType.Text;
+                    using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
+                    {
+                        using (DataTable dt = new DataTable())
+                        {
+                            sda.Fill(dt);
+                            dataGridView1.DataSource = dt;
+                        }
+                    }
+                }
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

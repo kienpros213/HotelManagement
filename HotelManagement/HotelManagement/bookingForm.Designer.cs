@@ -42,6 +42,8 @@ namespace HotelManagement
             this.bqe = new System.Windows.Forms.Label();
             this.vqe = new System.Windows.Forms.Label();
             this.sd = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // customerID
@@ -150,11 +152,20 @@ namespace HotelManagement
             this.sd.TabIndex = 14;
             this.sd.Text = "customerStatus";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(456, 47);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(730, 264);
+            this.dataGridView1.TabIndex = 15;
+            // 
             // bookingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1198, 450);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.sd);
             this.Controls.Add(this.vqe);
             this.Controls.Add(this.bqe);
@@ -170,6 +181,7 @@ namespace HotelManagement
             this.Controls.Add(this.customerID);
             this.Name = "bookingForm";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,5 +202,6 @@ namespace HotelManagement
         private System.Windows.Forms.Label bqe;
         private System.Windows.Forms.Label vqe;
         private System.Windows.Forms.Label sd;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
