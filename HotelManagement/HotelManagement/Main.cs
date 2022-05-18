@@ -20,16 +20,23 @@ namespace HotelManagement
 
         private void button2_Click(object sender, EventArgs e)
         {
+            bool isOpen = false;
+            foreach(Form f in Application.OpenForms)
             {
-                //Create a new instance of the MDI child template form
-                bookingForm _bookingForm = new bookingForm();
-
-                //Set parent form for the child window 
-                _bookingForm.MdiParent = this;
-
-                //Display the child window
-                _bookingForm.Show();
+                if(f.Name == "bookingForm")
+                {
+                    isOpen = true;
+                    f.BringToFront();
+                    break;
+                }
             }
+
+            if(isOpen == false)
+            {
+            bookingForm _bookingForm = new bookingForm();
+            _bookingForm.Show();
+            }
+
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -39,20 +46,32 @@ namespace HotelManagement
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //Create a new instance of the MDI child template form
-            scheduleForm _scheduleForm = new scheduleForm();
+            bool isOpen = false;
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Name == "reportForm")
+                {
+                    isOpen = true;
+                    f.BringToFront();
+                    break;
+                }
+            }
 
-            //Set parent form for the child window 
-            _scheduleForm.MdiParent = this;
-
-            //Display the child window
-            _scheduleForm.Show();
-
+            if (isOpen == false)
+            {
+                reportForm _reportForm = new reportForm();
+                _reportForm.Show();
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

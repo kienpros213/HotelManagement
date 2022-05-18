@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HotelManagement
 {
-    public partial class scheduleForm : Form
+    public partial class reportForm : Form
     {
-        public scheduleForm()
+        public reportForm()
         {
             InitializeComponent();
         }
