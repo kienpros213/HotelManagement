@@ -17,17 +17,14 @@ namespace HotelManagement
         {
             InitializeComponent();
             bindGrid();
-            bindList();
         }
         //dataGridView
         private void bindGrid()
         {
-            listView.Columns.Add("1", 70);
-            listView.Columns.Add("2", 70);
-            string constring = "Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True";
+            string constring = "Data Source=LAPTOP-VNMEN35T;Initial Catalog=HotelDatabase;Integrated Security=True";
             using (SqlConnection con = new SqlConnection(constring))
             {
-                using (SqlCommand cmd = new SqlCommand("SELECT * FROM tblCustomer", con))
+                using (SqlCommand cmd = new SqlCommand("SELECT * FROM tblRoom", con))
                 {
                     cmd.CommandType = CommandType.Text;
                     using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
@@ -42,45 +39,11 @@ namespace HotelManagement
             }
         }
 
-        //listView
-        private void bindList()
-        {
-            string constring = "Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True";
-            SqlConnection con = new SqlConnection(constring);
-            SqlCommand cmd;
-            DataTable dt;
-            SqlDataAdapter da;
-            DataSet ds;
-
-            listView.Columns.Add("1",70);
-            listView.Columns.Add("2", 70);
-            listView.Columns.Add("3", 70);
-            listView.Columns.Add("4", 70);
-            listView.View = View.Details;
-
-            con.Open();
-            cmd = new SqlCommand("SELECT * FROM tblRoom", con);
-            da = new SqlDataAdapter(cmd);
-            ds = new DataSet();
-            da.Fill(ds, "testTable");
-            con.Close();
-
-            dt = ds.Tables["testTable"];
-            for(int i = 0; i <= dt.Rows.Count; i++)
-            {
-                listView.Items.Add(dt.Rows[i].ItemArray[0].ToString());
-                listView.Items[i].SubItems.Add(dt.Rows[i].ItemArray[i].ToString());
-                listView.Items[i].SubItems.Add(dt.Rows[i].ItemArray[i].ToString());
-                listView.Items[i].SubItems.Add(dt.Rows[i].ItemArray[i].ToString());
-            }
-        }
-
-
         private void button1_Click(object sender, EventArgs e)
         {
             //sql syntax
             string sqlstring = "INSERT INTO tblCustomer(customerID,customerFName,customerLName,reservation,customerAddress,customerStatus) VALUES('"+customerID.Text+"','" + customerFName.Text + "','" + customerLName.Text + "','" + reservation.Text + "','" + customerAddress.Text + "','" + customerStatus.Text + "')";
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-VNMEN35T;Initial Catalog=HotelDatabase;Integrated Security=True");
             con.Open();
             SqlCommand command = new SqlCommand(sqlstring, con);
             command.ExecuteNonQuery();
@@ -96,9 +59,5 @@ namespace HotelManagement
             customerStatus.Clear();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            dataGridView.Refresh();
-        }
     }
 }

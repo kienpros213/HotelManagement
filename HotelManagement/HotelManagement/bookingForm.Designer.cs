@@ -29,10 +29,6 @@ namespace HotelManagement
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("");
             this.customerID = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.customerFName = new System.Windows.Forms.TextBox();
@@ -47,27 +43,23 @@ namespace HotelManagement
             this.vqe = new System.Windows.Forms.Label();
             this.sd = new System.Windows.Forms.Label();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.listView = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // customerID
             // 
-            this.customerID.Location = new System.Drawing.Point(206, 50);
+            this.customerID.Location = new System.Drawing.Point(275, 62);
+            this.customerID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.customerID.Name = "customerID";
-            this.customerID.Size = new System.Drawing.Size(220, 20);
+            this.customerID.Size = new System.Drawing.Size(292, 22);
             this.customerID.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(272, 316);
+            this.button1.Location = new System.Drawing.Point(363, 389);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 2;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -75,90 +67,101 @@ namespace HotelManagement
             // 
             // customerFName
             // 
-            this.customerFName.Location = new System.Drawing.Point(206, 95);
+            this.customerFName.Location = new System.Drawing.Point(275, 117);
+            this.customerFName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.customerFName.Name = "customerFName";
-            this.customerFName.Size = new System.Drawing.Size(220, 20);
+            this.customerFName.Size = new System.Drawing.Size(292, 22);
             this.customerFName.TabIndex = 3;
             // 
             // customerLName
             // 
-            this.customerLName.Location = new System.Drawing.Point(206, 141);
+            this.customerLName.Location = new System.Drawing.Point(275, 174);
+            this.customerLName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.customerLName.Name = "customerLName";
-            this.customerLName.Size = new System.Drawing.Size(220, 20);
+            this.customerLName.Size = new System.Drawing.Size(292, 22);
             this.customerLName.TabIndex = 5;
             // 
             // customerStatus
             // 
-            this.customerStatus.Location = new System.Drawing.Point(206, 275);
+            this.customerStatus.Location = new System.Drawing.Point(275, 338);
+            this.customerStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.customerStatus.Name = "customerStatus";
-            this.customerStatus.Size = new System.Drawing.Size(220, 20);
+            this.customerStatus.Size = new System.Drawing.Size(292, 22);
             this.customerStatus.TabIndex = 8;
             // 
             // customerAddress
             // 
-            this.customerAddress.Location = new System.Drawing.Point(206, 229);
+            this.customerAddress.Location = new System.Drawing.Point(275, 282);
+            this.customerAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.customerAddress.Name = "customerAddress";
-            this.customerAddress.Size = new System.Drawing.Size(220, 20);
+            this.customerAddress.Size = new System.Drawing.Size(292, 22);
             this.customerAddress.TabIndex = 7;
             // 
             // reservation
             // 
-            this.reservation.Location = new System.Drawing.Point(206, 184);
+            this.reservation.Location = new System.Drawing.Point(275, 226);
+            this.reservation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.reservation.Name = "reservation";
-            this.reservation.Size = new System.Drawing.Size(220, 20);
+            this.reservation.Size = new System.Drawing.Size(292, 22);
             this.reservation.TabIndex = 6;
             // 
             // fqwe
             // 
             this.fqwe.AutoSize = true;
-            this.fqwe.Location = new System.Drawing.Point(115, 53);
+            this.fqwe.Location = new System.Drawing.Point(153, 65);
+            this.fqwe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.fqwe.Name = "fqwe";
-            this.fqwe.Size = new System.Drawing.Size(61, 13);
+            this.fqwe.Size = new System.Drawing.Size(76, 16);
             this.fqwe.TabIndex = 9;
             this.fqwe.Text = "customerID";
             // 
             // rew
             // 
             this.rew.AutoSize = true;
-            this.rew.Location = new System.Drawing.Point(115, 184);
+            this.rew.Location = new System.Drawing.Point(153, 226);
+            this.rew.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.rew.Name = "rew";
-            this.rew.Size = new System.Drawing.Size(59, 13);
+            this.rew.Size = new System.Drawing.Size(75, 16);
             this.rew.TabIndex = 10;
             this.rew.Text = "reservation";
             // 
             // sdf
             // 
             this.sdf.AutoSize = true;
-            this.sdf.Location = new System.Drawing.Point(115, 232);
+            this.sdf.Location = new System.Drawing.Point(153, 286);
+            this.sdf.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.sdf.Name = "sdf";
-            this.sdf.Size = new System.Drawing.Size(85, 13);
+            this.sdf.Size = new System.Drawing.Size(110, 16);
             this.sdf.TabIndex = 11;
             this.sdf.Text = "customerAddess";
             // 
             // bqe
             // 
             this.bqe.AutoSize = true;
-            this.bqe.Location = new System.Drawing.Point(115, 144);
+            this.bqe.Location = new System.Drawing.Point(153, 177);
+            this.bqe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bqe.Name = "bqe";
-            this.bqe.Size = new System.Drawing.Size(84, 13);
+            this.bqe.Size = new System.Drawing.Size(107, 16);
             this.bqe.TabIndex = 12;
             this.bqe.Text = "customerLName";
             // 
             // vqe
             // 
             this.vqe.AutoSize = true;
-            this.vqe.Location = new System.Drawing.Point(115, 95);
+            this.vqe.Location = new System.Drawing.Point(153, 117);
+            this.vqe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.vqe.Name = "vqe";
-            this.vqe.Size = new System.Drawing.Size(84, 13);
+            this.vqe.Size = new System.Drawing.Size(108, 16);
             this.vqe.TabIndex = 13;
             this.vqe.Text = "customerFName";
             // 
             // sd
             // 
             this.sd.AutoSize = true;
-            this.sd.Location = new System.Drawing.Point(115, 278);
+            this.sd.Location = new System.Drawing.Point(153, 342);
+            this.sd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.sd.Name = "sd";
-            this.sd.Size = new System.Drawing.Size(80, 13);
+            this.sd.Size = new System.Drawing.Size(100, 16);
             this.sd.TabIndex = 14;
             this.sd.Text = "customerStatus";
             // 
@@ -169,47 +172,17 @@ namespace HotelManagement
             this.dataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.GridColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dataGridView.Location = new System.Drawing.Point(456, 47);
+            this.dataGridView.Location = new System.Drawing.Point(608, 58);
+            this.dataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(730, 264);
+            this.dataGridView.Size = new System.Drawing.Size(973, 325);
             this.dataGridView.TabIndex = 15;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(402, 353);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "refresh";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // listView
-            // 
-            this.listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4});
-            this.listView.HideSelection = false;
-            this.listView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem3,
-            listViewItem4});
-            this.listView.Location = new System.Drawing.Point(550, 340);
-            this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(353, 80);
-            this.listView.TabIndex = 17;
-            this.listView.UseCompatibleStateImageBehavior = false;
             // 
             // bookingForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1198, 450);
-            this.Controls.Add(this.listView);
-            this.Controls.Add(this.button2);
+            this.ClientSize = new System.Drawing.Size(1597, 554);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.sd);
             this.Controls.Add(this.vqe);
@@ -224,6 +197,7 @@ namespace HotelManagement
             this.Controls.Add(this.customerFName);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.customerID);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "bookingForm";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
@@ -248,11 +222,5 @@ namespace HotelManagement
         private System.Windows.Forms.Label vqe;
         private System.Windows.Forms.Label sd;
         private System.Windows.Forms.DataGridView dataGridView;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ListView listView;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }
