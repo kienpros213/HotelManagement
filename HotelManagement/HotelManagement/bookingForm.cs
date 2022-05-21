@@ -59,5 +59,13 @@ namespace HotelManagement
             customerStatus.Clear();
         }
 
+        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridView.Rows[e.RowIndex];
+                roomBox.Text = row.Cells["roomID"].Value.ToString();
+            }
+        }
     }
 }

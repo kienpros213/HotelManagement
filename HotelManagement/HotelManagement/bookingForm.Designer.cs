@@ -43,6 +43,8 @@ namespace HotelManagement
             this.vqe = new System.Windows.Forms.Label();
             this.sd = new System.Windows.Forms.Label();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.roomBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,12 +58,12 @@ namespace HotelManagement
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(363, 389);
+            this.button1.Location = new System.Drawing.Point(362, 442);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
+            this.button1.Text = "insert";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -167,6 +169,10 @@ namespace HotelManagement
             // 
             // dataGridView
             // 
+            this.dataGridView.AllowUserToAddRows = false;
+            this.dataGridView.AllowUserToDeleteRows = false;
+            this.dataGridView.AllowUserToResizeColumns = false;
+            this.dataGridView.AllowUserToResizeRows = false;
             this.dataGridView.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -175,14 +181,39 @@ namespace HotelManagement
             this.dataGridView.Location = new System.Drawing.Point(608, 58);
             this.dataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView.Name = "dataGridView";
+            this.dataGridView.ReadOnly = true;
+            this.dataGridView.RowHeadersVisible = false;
+            this.dataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView.Size = new System.Drawing.Size(973, 325);
             this.dataGridView.TabIndex = 15;
+            this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(153, 399);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 16);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Room";
+            // 
+            // roomBox
+            // 
+            this.roomBox.Location = new System.Drawing.Point(275, 395);
+            this.roomBox.Margin = new System.Windows.Forms.Padding(4);
+            this.roomBox.Name = "roomBox";
+            this.roomBox.Size = new System.Drawing.Size(292, 22);
+            this.roomBox.TabIndex = 16;
             // 
             // bookingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1597, 554);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.roomBox);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.sd);
             this.Controls.Add(this.vqe);
@@ -222,5 +253,7 @@ namespace HotelManagement
         private System.Windows.Forms.Label vqe;
         private System.Windows.Forms.Label sd;
         private System.Windows.Forms.DataGridView dataGridView;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox roomBox;
     }
 }
