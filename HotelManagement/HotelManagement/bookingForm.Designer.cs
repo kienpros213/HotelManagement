@@ -185,7 +185,7 @@ namespace HotelManagement
             this.dataGridView.RowHeadersVisible = false;
             this.dataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView.Size = new System.Drawing.Size(973, 325);
+            this.dataGridView.Size = new System.Drawing.Size(617, 325);
             this.dataGridView.TabIndex = 15;
             this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
             // 
@@ -211,7 +211,7 @@ namespace HotelManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1597, 554);
+            this.ClientSize = new System.Drawing.Size(1238, 554);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.roomBox);
             this.Controls.Add(this.dataGridView);
