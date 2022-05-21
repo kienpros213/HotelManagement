@@ -16,11 +16,14 @@ namespace HotelManagement
         public bookingForm()
         {
             InitializeComponent();
-            BindGrid();
+            bindGrid();
+            bindList();
         }
-
-        private void BindGrid()
+        //dataGridView
+        private void bindGrid()
         {
+            listView.Columns.Add("1", 70);
+            listView.Columns.Add("2", 70);
             string constring = "Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True";
             using (SqlConnection con = new SqlConnection(constring))
             {
@@ -38,6 +41,40 @@ namespace HotelManagement
                 }
             }
         }
+
+        //listView
+        private void bindList()
+        {
+            string constring = "Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True";
+            SqlConnection con = new SqlConnection(constring);
+            SqlCommand cmd;
+            DataTable dt;
+            SqlDataAdapter da;
+            DataSet ds;
+
+            listView.Columns.Add("1",70);
+            listView.Columns.Add("2", 70);
+            listView.Columns.Add("3", 70);
+            listView.Columns.Add("4", 70);
+            listView.View = View.Details;
+
+            con.Open();
+            cmd = new SqlCommand("SELECT * FROM tblRoom", con);
+            da = new SqlDataAdapter(cmd);
+            ds = new DataSet();
+            da.Fill(ds, "testTable");
+            con.Close();
+
+            dt = ds.Tables["testTable"];
+            for(int i = 0; i <= dt.Rows.Count; i++)
+            {
+                listView.Items.Add(dt.Rows[i].ItemArray[0].ToString());
+                listView.Items[i].SubItems.Add(dt.Rows[i].ItemArray[i].ToString());
+                listView.Items[i].SubItems.Add(dt.Rows[i].ItemArray[i].ToString());
+                listView.Items[i].SubItems.Add(dt.Rows[i].ItemArray[i].ToString());
+            }
+        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {

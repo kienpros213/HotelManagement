@@ -38,6 +38,7 @@ namespace HotelManagement
             this.button1 = new System.Windows.Forms.Button();
             this.formBorderRadius = new XanderUI.XUIObjectEllipse();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.xuiObjectAnimator = new XanderUI.XUIObjectAnimator();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -79,6 +80,8 @@ namespace HotelManagement
             this.button4.TabIndex = 4;
             this.button4.Text = "ABOUT US";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.MouseLeave += new System.EventHandler(this.button4_MouseLeave);
+            this.button4.MouseHover += new System.EventHandler(this.button4_MouseHover);
             // 
             // button3
             // 
@@ -93,6 +96,8 @@ namespace HotelManagement
             this.button3.Text = "REPORT";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.MouseLeave += new System.EventHandler(this.button3_MouseLeave);
+            this.button3.MouseHover += new System.EventHandler(this.button3_MouseHover_1);
             // 
             // button2
             // 
@@ -107,6 +112,8 @@ namespace HotelManagement
             this.button2.Text = "BOOKING";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
+            this.button2.MouseHover += new System.EventHandler(this.button2_MouseHover);
             // 
             // button1
             // 
@@ -120,6 +127,8 @@ namespace HotelManagement
             this.button1.TabIndex = 1;
             this.button1.Text = "HOME";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
             // formBorderRadius
             // 
@@ -148,6 +157,7 @@ namespace HotelManagement
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Main_Load);
             this.panel1.ResumeLayout(false);
@@ -168,6 +178,7 @@ namespace HotelManagement
         private XanderUI.XUIObjectEllipse formBorderRadius;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private XanderUI.XUIObjectAnimator xuiObjectAnimator;
     }
 }
 

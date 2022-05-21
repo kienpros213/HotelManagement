@@ -29,6 +29,10 @@ namespace HotelManagement
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("");
             this.customerID = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.customerFName = new System.Windows.Forms.TextBox();
@@ -44,6 +48,11 @@ namespace HotelManagement
             this.sd = new System.Windows.Forms.Label();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
+            this.listView = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -155,7 +164,11 @@ namespace HotelManagement
             // 
             // dataGridView
             // 
+            this.dataGridView.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dataGridView.Location = new System.Drawing.Point(456, 47);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.Size = new System.Drawing.Size(730, 264);
@@ -171,11 +184,31 @@ namespace HotelManagement
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // listView
+            // 
+            this.listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.listView.HideSelection = false;
+            this.listView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2,
+            listViewItem3,
+            listViewItem4});
+            this.listView.Location = new System.Drawing.Point(550, 340);
+            this.listView.Name = "listView";
+            this.listView.Size = new System.Drawing.Size(353, 80);
+            this.listView.TabIndex = 17;
+            this.listView.UseCompatibleStateImageBehavior = false;
+            // 
             // bookingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1198, 450);
+            this.Controls.Add(this.listView);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.sd);
@@ -216,5 +249,10 @@ namespace HotelManagement
         private System.Windows.Forms.Label sd;
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ListView listView;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }

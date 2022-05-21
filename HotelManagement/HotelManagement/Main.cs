@@ -72,5 +72,45 @@ namespace HotelManagement
         {
             this.Close();
         }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            xuiObjectAnimator.ColorAnimate(button1, Color.LightBlue, XanderUI.XUIObjectAnimator.ColorAnimation.SlideFill, true, 3);
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            xuiObjectAnimator.ColorAnimate(button1, Color.White, XanderUI.XUIObjectAnimator.ColorAnimation.SlideFill, true, 3);
+        }
+
+        private void button2_MouseHover(object sender, EventArgs e)
+        {
+            xuiObjectAnimator.ColorAnimate(button2, Color.LightBlue, XanderUI.XUIObjectAnimator.ColorAnimation.SlideFill, true, 3);
+        }
+
+        private void button2_MouseLeave(object sender, EventArgs e)
+        {
+            xuiObjectAnimator.ColorAnimate(button2, Color.White, XanderUI.XUIObjectAnimator.ColorAnimation.SlideFill, true, 3);
+        }
+
+        private void button3_MouseHover_1(object sender, EventArgs e)
+        {
+            xuiObjectAnimator.ColorAnimate(button3, Color.LightBlue, XanderUI.XUIObjectAnimator.ColorAnimation.SlideFill, true, 3);
+        }
+
+        private void button3_MouseLeave(object sender, EventArgs e)
+        {
+            xuiObjectAnimator.ColorAnimate(button3, Color.White, XanderUI.XUIObjectAnimator.ColorAnimation.SlideFill, true, 3);
+        }
+
+        private void button4_MouseHover(object sender, EventArgs e)
+        {
+            xuiObjectAnimator.ColorAnimate(button4, Color.LightBlue, XanderUI.XUIObjectAnimator.ColorAnimation.SlideFill, true, 3);
+        }
+
+        private void button4_MouseLeave(object sender, EventArgs e)
+        {
+            xuiObjectAnimator.ColorAnimate(button4, Color.White, XanderUI.XUIObjectAnimator.ColorAnimation.SlideFill, true, 3);
+        }
     }
 }
