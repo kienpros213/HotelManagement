@@ -23,7 +23,7 @@ namespace HotelManagement
             bool isOpen = false;
             foreach (Form f in Application.OpenForms)
             {
-                if (f.Name == "bookingForm")
+                if (f.Name == "customerForm")
                 {
                     isOpen = true;
                     f.BringToFront();
@@ -33,8 +33,8 @@ namespace HotelManagement
 
             if (isOpen == false)
             {
-                bookingForm _bookingForm = new bookingForm();
-                _bookingForm.Show();
+                customerForm _customerForm = new customerForm();
+                _customerForm.Show();
             }
         }
 

@@ -1,7 +1,6 @@
 D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe.config
 D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe
 D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.pdb
-D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
 D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Main.resources
 D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
 D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.cache
@@ -12,3 +11,5 @@ D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\b
 D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CopyComplete
 D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.reportForm.resources
 D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.bookingForm.resources
+D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.customerForm.resources
+D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.roomForm.resources

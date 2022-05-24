@@ -50,30 +50,56 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="bookingForm.cs">
+    <Compile Include="Forms\bookingForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bookingForm.Designer.cs">
+    <Compile Include="Forms\bookingForm.Designer.cs">
       <DependentUpon>bookingForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="reportForm.cs">
+    <Compile Include="class\getDataGridView.cs" />
+    <Compile Include="Forms\customerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="reportForm.Designer.cs">
+    <Compile Include="Forms\customerForm.Designer.cs">
+      <DependentUpon>customerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\roomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\roomForm.Designer.cs">
+      <DependentUpon>roomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="class\updateData.cs" />
+    <Compile Include="Forms\reportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\reportForm.Designer.cs">
       <DependentUpon>reportForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
+    <Compile Include="Forms\Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
+    <Compile Include="Forms\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="class\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="bookingForm.resx">
+    <Compile Include="userControls\transperentTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="userControls\transperentTextBox.Designer.cs">
+      <DependentUpon>transperentTextBox.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\bookingForm.resx">
       <DependentUpon>bookingForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
+    <EmbeddedResource Include="Forms\customerForm.resx">
+      <DependentUpon>customerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\roomForm.resx">
+      <DependentUpon>roomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -86,7 +112,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="reportForm.resx">
+    <EmbeddedResource Include="Forms\reportForm.resx">
       <DependentUpon>reportForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

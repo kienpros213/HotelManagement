@@ -43,7 +43,6 @@ namespace HotelManagement
             this.vqe = new System.Windows.Forms.Label();
             this.sd = new System.Windows.Forms.Label();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -161,22 +160,11 @@ namespace HotelManagement
             this.dataGridView.Size = new System.Drawing.Size(730, 264);
             this.dataGridView.TabIndex = 15;
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(402, 353);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "refresh";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // bookingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1198, 450);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.sd);
             this.Controls.Add(this.vqe);
@@ -215,6 +203,5 @@ namespace HotelManagement
         private System.Windows.Forms.Label vqe;
         private System.Windows.Forms.Label sd;
         private System.Windows.Forms.DataGridView dataGridView;
-        private System.Windows.Forms.Button button2;
     }
 }
