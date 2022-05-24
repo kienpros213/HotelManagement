@@ -16,7 +16,6 @@ namespace HotelManagement
         public bookingForm()
         {
             InitializeComponent();
-            getDataGridView.bindGrid(dataGridView);
         }
         private void button1_Click(object sender, EventArgs e)
         {

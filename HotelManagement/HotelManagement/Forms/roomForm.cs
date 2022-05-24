@@ -15,7 +15,7 @@ namespace HotelManagement
         public roomForm()
         {
             InitializeComponent();
-            getDataGridView.bindGrid(roomDataList);
+            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom");
         }
     }
 }

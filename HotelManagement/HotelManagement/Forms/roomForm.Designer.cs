@@ -29,7 +29,8 @@ namespace HotelManagement
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(roomForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
@@ -48,6 +49,17 @@ namespace HotelManagement
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.transperentTextBox1 = new HotelManagement.transperentTextBox();
+            this.transperentTextBox2 = new HotelManagement.transperentTextBox();
+            this.transperentTextBox3 = new HotelManagement.transperentTextBox();
+            this.transperentTextBox4 = new HotelManagement.transperentTextBox();
+            this.transperentTextBox5 = new HotelManagement.transperentTextBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.roomDataList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,6 +72,12 @@ namespace HotelManagement
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -142,20 +160,29 @@ namespace HotelManagement
             this.roomDataList.AllowUserToResizeColumns = false;
             this.roomDataList.AllowUserToResizeRows = false;
             this.roomDataList.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.roomDataList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.roomDataList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.roomDataList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.roomDataList.ColumnHeadersVisible = false;
-            this.roomDataList.Location = new System.Drawing.Point(573, 0);
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.roomDataList.DefaultCellStyle = dataGridViewCellStyle6;
+            this.roomDataList.Location = new System.Drawing.Point(573, 52);
             this.roomDataList.Name = "roomDataList";
             this.roomDataList.RowHeadersVisible = false;
-            this.roomDataList.Size = new System.Drawing.Size(808, 400);
+            this.roomDataList.RowTemplate.Height = 33;
+            this.roomDataList.Size = new System.Drawing.Size(732, 348);
             this.roomDataList.TabIndex = 1;
             // 
             // pictureBox1
@@ -253,11 +280,130 @@ namespace HotelManagement
             this.pictureBox10.TabIndex = 11;
             this.pictureBox10.TabStop = false;
             // 
+            // transperentTextBox1
+            // 
+            this.transperentTextBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.transperentTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.transperentTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transperentTextBox1.Location = new System.Drawing.Point(386, 62);
+            this.transperentTextBox1.Name = "transperentTextBox1";
+            this.transperentTextBox1.Size = new System.Drawing.Size(181, 22);
+            this.transperentTextBox1.TabIndex = 12;
+            // 
+            // transperentTextBox2
+            // 
+            this.transperentTextBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.transperentTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.transperentTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transperentTextBox2.Location = new System.Drawing.Point(322, 121);
+            this.transperentTextBox2.Name = "transperentTextBox2";
+            this.transperentTextBox2.Size = new System.Drawing.Size(245, 22);
+            this.transperentTextBox2.TabIndex = 13;
+            // 
+            // transperentTextBox3
+            // 
+            this.transperentTextBox3.BackColor = System.Drawing.SystemColors.Control;
+            this.transperentTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.transperentTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transperentTextBox3.Location = new System.Drawing.Point(414, 182);
+            this.transperentTextBox3.Name = "transperentTextBox3";
+            this.transperentTextBox3.Size = new System.Drawing.Size(153, 22);
+            this.transperentTextBox3.TabIndex = 14;
+            // 
+            // transperentTextBox4
+            // 
+            this.transperentTextBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.transperentTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.transperentTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transperentTextBox4.Location = new System.Drawing.Point(308, 241);
+            this.transperentTextBox4.Name = "transperentTextBox4";
+            this.transperentTextBox4.Size = new System.Drawing.Size(259, 22);
+            this.transperentTextBox4.TabIndex = 15;
+            // 
+            // transperentTextBox5
+            // 
+            this.transperentTextBox5.BackColor = System.Drawing.SystemColors.Control;
+            this.transperentTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.transperentTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transperentTextBox5.Location = new System.Drawing.Point(325, 301);
+            this.transperentTextBox5.Name = "transperentTextBox5";
+            this.transperentTextBox5.Size = new System.Drawing.Size(242, 22);
+            this.transperentTextBox5.TabIndex = 16;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(26, 13);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(69, 14);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox11.TabIndex = 17;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
+            this.pictureBox12.Location = new System.Drawing.Point(150, 13);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(63, 14);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox12.TabIndex = 18;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
+            this.pictureBox13.Location = new System.Drawing.Point(299, 12);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(129, 17);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox13.TabIndex = 19;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
+            this.pictureBox14.Location = new System.Drawing.Point(500, 13);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(86, 14);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox14.TabIndex = 20;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
+            this.pictureBox15.Location = new System.Drawing.Point(620, 13);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(97, 14);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox15.TabIndex = 21;
+            this.pictureBox15.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(192)))), ((int)(((byte)(195)))));
+            this.panel2.Controls.Add(this.pictureBox15);
+            this.panel2.Controls.Add(this.pictureBox11);
+            this.panel2.Controls.Add(this.pictureBox14);
+            this.panel2.Controls.Add(this.pictureBox12);
+            this.panel2.Controls.Add(this.pictureBox13);
+            this.panel2.Location = new System.Drawing.Point(573, 5);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(732, 41);
+            this.panel2.TabIndex = 22;
+            // 
             // roomForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1380, 400);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.transperentTextBox5);
+            this.Controls.Add(this.transperentTextBox4);
+            this.Controls.Add(this.transperentTextBox3);
+            this.Controls.Add(this.transperentTextBox2);
+            this.Controls.Add(this.transperentTextBox1);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox8);
@@ -285,6 +431,13 @@ namespace HotelManagement
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -309,5 +462,16 @@ namespace HotelManagement
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
+        private transperentTextBox transperentTextBox1;
+        private transperentTextBox transperentTextBox2;
+        private transperentTextBox transperentTextBox3;
+        private transperentTextBox transperentTextBox4;
+        private transperentTextBox transperentTextBox5;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.Panel panel2;
     }
 }

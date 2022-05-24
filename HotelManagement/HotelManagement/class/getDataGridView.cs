@@ -13,12 +13,12 @@ namespace HotelManagement
 {
     class getDataGridView
     {
-        public static void bindGrid(System.Windows.Forms.DataGridView _dataGridViewObj)
+        public static void bindGrid(System.Windows.Forms.DataGridView _dataGridViewObj, string tbl)
         {
             string constring = "Data Source=DESKTOP-IQ966PV;Initial Catalog=HotelDatabase;Integrated Security=True";
             using (SqlConnection con = new SqlConnection(constring))
             {
-                using (SqlCommand cmd = new SqlCommand("SELECT * FROM tblCustomer", con))
+                using (SqlCommand cmd = new SqlCommand(tbl, con))
                 {
                     cmd.CommandType = CommandType.Text;
                     using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
