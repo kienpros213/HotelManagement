@@ -17,7 +17,5 @@ namespace HotelManagement
             InitializeComponent();
             getDataGridView.bindGrid(roomDataList);
         }
-
-        
     }
 }
