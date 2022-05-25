@@ -29,8 +29,8 @@ namespace HotelManagement
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(roomForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.allRoomBtn = new System.Windows.Forms.Button();
@@ -55,12 +55,12 @@ namespace HotelManagement
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dateOutBox = new HotelManagement.transperentTextBox();
+            this.dateInBox = new HotelManagement.transperentTextBox();
+            this.reserveDateBox = new HotelManagement.transperentTextBox();
+            this.roomIDBox = new HotelManagement.transperentTextBox();
+            this.reserveIDBox = new HotelManagement.transperentTextBox();
             this.xuiObjectEllipse1 = new XanderUI.XUIObjectEllipse();
-            this.transperentTextBox5 = new HotelManagement.transperentTextBox();
-            this.transperentTextBox4 = new HotelManagement.transperentTextBox();
-            this.transperentTextBox3 = new HotelManagement.transperentTextBox();
-            this.transperentTextBox2 = new HotelManagement.transperentTextBox();
-            this.transperentTextBox1 = new HotelManagement.transperentTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.roomDataList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -167,30 +167,31 @@ namespace HotelManagement
             this.roomDataList.AllowUserToResizeColumns = false;
             this.roomDataList.AllowUserToResizeRows = false;
             this.roomDataList.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.roomDataList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.roomDataList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.roomDataList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.roomDataList.ColumnHeadersVisible = false;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.roomDataList.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.roomDataList.DefaultCellStyle = dataGridViewCellStyle4;
             this.roomDataList.Location = new System.Drawing.Point(573, 52);
             this.roomDataList.Name = "roomDataList";
             this.roomDataList.RowHeadersVisible = false;
             this.roomDataList.RowTemplate.Height = 33;
-            this.roomDataList.Size = new System.Drawing.Size(732, 348);
+            this.roomDataList.Size = new System.Drawing.Size(697, 348);
             this.roomDataList.TabIndex = 1;
+            this.roomDataList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.roomDataList_CellContentClick);
             // 
             // pictureBox1
             // 
@@ -330,7 +331,7 @@ namespace HotelManagement
             // pictureBox15
             // 
             this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
-            this.pictureBox15.Location = new System.Drawing.Point(620, 13);
+            this.pictureBox15.Location = new System.Drawing.Point(555, 13);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(97, 14);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -347,64 +348,69 @@ namespace HotelManagement
             this.panel2.Controls.Add(this.pictureBox13);
             this.panel2.Location = new System.Drawing.Point(573, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(732, 41);
+            this.panel2.Size = new System.Drawing.Size(697, 41);
             this.panel2.TabIndex = 22;
+            // 
+            // dateOutBox
+            // 
+            this.dateOutBox.BackColor = System.Drawing.SystemColors.Control;
+            this.dateOutBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dateOutBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateOutBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.dateOutBox.Location = new System.Drawing.Point(335, 301);
+            this.dateOutBox.Name = "dateOutBox";
+            this.dateOutBox.Size = new System.Drawing.Size(232, 22);
+            this.dateOutBox.TabIndex = 16;
+            // 
+            // dateInBox
+            // 
+            this.dateInBox.BackColor = System.Drawing.SystemColors.Control;
+            this.dateInBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dateInBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateInBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.dateInBox.Location = new System.Drawing.Point(318, 241);
+            this.dateInBox.Name = "dateInBox";
+            this.dateInBox.Size = new System.Drawing.Size(249, 22);
+            this.dateInBox.TabIndex = 15;
+            // 
+            // reserveDateBox
+            // 
+            this.reserveDateBox.BackColor = System.Drawing.SystemColors.Control;
+            this.reserveDateBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.reserveDateBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reserveDateBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.reserveDateBox.Location = new System.Drawing.Point(424, 182);
+            this.reserveDateBox.Name = "reserveDateBox";
+            this.reserveDateBox.Size = new System.Drawing.Size(143, 22);
+            this.reserveDateBox.TabIndex = 14;
+            // 
+            // roomIDBox
+            // 
+            this.roomIDBox.BackColor = System.Drawing.SystemColors.Control;
+            this.roomIDBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.roomIDBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roomIDBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.roomIDBox.Location = new System.Drawing.Point(332, 121);
+            this.roomIDBox.Name = "roomIDBox";
+            this.roomIDBox.Size = new System.Drawing.Size(235, 22);
+            this.roomIDBox.TabIndex = 13;
+            // 
+            // reserveIDBox
+            // 
+            this.reserveIDBox.BackColor = System.Drawing.SystemColors.Control;
+            this.reserveIDBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.reserveIDBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reserveIDBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.reserveIDBox.Location = new System.Drawing.Point(396, 62);
+            this.reserveIDBox.Name = "reserveIDBox";
+            this.reserveIDBox.Size = new System.Drawing.Size(171, 22);
+            this.reserveIDBox.TabIndex = 12;
             // 
             // xuiObjectEllipse1
             // 
             this.xuiObjectEllipse1.CornerRadius = 10;
-            this.xuiObjectEllipse1.EffectedControl = null;
+            this.xuiObjectEllipse1.EffectedControl = this.panel2;
             this.xuiObjectEllipse1.EffectedForm = null;
-            // 
-            // transperentTextBox5
-            // 
-            this.transperentTextBox5.BackColor = System.Drawing.SystemColors.Control;
-            this.transperentTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.transperentTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transperentTextBox5.Location = new System.Drawing.Point(325, 301);
-            this.transperentTextBox5.Name = "transperentTextBox5";
-            this.transperentTextBox5.Size = new System.Drawing.Size(242, 22);
-            this.transperentTextBox5.TabIndex = 16;
-            // 
-            // transperentTextBox4
-            // 
-            this.transperentTextBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.transperentTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.transperentTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transperentTextBox4.Location = new System.Drawing.Point(308, 241);
-            this.transperentTextBox4.Name = "transperentTextBox4";
-            this.transperentTextBox4.Size = new System.Drawing.Size(259, 22);
-            this.transperentTextBox4.TabIndex = 15;
-            // 
-            // transperentTextBox3
-            // 
-            this.transperentTextBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.transperentTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.transperentTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transperentTextBox3.Location = new System.Drawing.Point(414, 182);
-            this.transperentTextBox3.Name = "transperentTextBox3";
-            this.transperentTextBox3.Size = new System.Drawing.Size(153, 22);
-            this.transperentTextBox3.TabIndex = 14;
-            // 
-            // transperentTextBox2
-            // 
-            this.transperentTextBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.transperentTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.transperentTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transperentTextBox2.Location = new System.Drawing.Point(322, 121);
-            this.transperentTextBox2.Name = "transperentTextBox2";
-            this.transperentTextBox2.Size = new System.Drawing.Size(245, 22);
-            this.transperentTextBox2.TabIndex = 13;
-            // 
-            // transperentTextBox1
-            // 
-            this.transperentTextBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.transperentTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.transperentTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transperentTextBox1.Location = new System.Drawing.Point(386, 62);
-            this.transperentTextBox1.Name = "transperentTextBox1";
-            this.transperentTextBox1.Size = new System.Drawing.Size(181, 22);
-            this.transperentTextBox1.TabIndex = 12;
             // 
             // roomForm
             // 
@@ -412,11 +418,11 @@ namespace HotelManagement
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1380, 400);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.transperentTextBox5);
-            this.Controls.Add(this.transperentTextBox4);
-            this.Controls.Add(this.transperentTextBox3);
-            this.Controls.Add(this.transperentTextBox2);
-            this.Controls.Add(this.transperentTextBox1);
+            this.Controls.Add(this.dateOutBox);
+            this.Controls.Add(this.dateInBox);
+            this.Controls.Add(this.reserveDateBox);
+            this.Controls.Add(this.roomIDBox);
+            this.Controls.Add(this.reserveIDBox);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox8);
@@ -475,11 +481,11 @@ namespace HotelManagement
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private transperentTextBox transperentTextBox1;
-        private transperentTextBox transperentTextBox2;
-        private transperentTextBox transperentTextBox3;
-        private transperentTextBox transperentTextBox4;
-        private transperentTextBox transperentTextBox5;
+        private transperentTextBox reserveIDBox;
+        private transperentTextBox roomIDBox;
+        private transperentTextBox reserveDateBox;
+        private transperentTextBox dateInBox;
+        private transperentTextBox dateOutBox;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox13;

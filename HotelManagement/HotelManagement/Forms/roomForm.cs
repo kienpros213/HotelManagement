@@ -30,6 +30,10 @@ namespace HotelManagement
                 roomDataList.Columns[3].Width = 115;
                 roomDataList.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
+
+                roomDataList.Columns[4].Width = 150;
+                roomDataList.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
                 int temp = roomDataList.Columns.Count;
                 MessageBox.Show(temp.ToString());
             }
@@ -42,22 +46,27 @@ namespace HotelManagement
 
         private void singleRoomBtn_Click(object sender, EventArgs e)
         {
-            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom WHERE classID = 1");
+            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom WHERE (classID = 1 AND roomStatus = 'unoccupied')");
         }
 
         private void doubleRoomBtn_Click(object sender, EventArgs e)
         {
-            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom WHERE classID = 2");
+            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom WHERE (classID = 2 AND roomStatus = 'unoccupied')");
         }
 
         private void familyRoomBtn_Click(object sender, EventArgs e)
         {
-            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom WHERE classID = 3");
+            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom WHERE (classID = 3 AND roomStatus = 'unoccupied')");
         }
 
         private void suitRoomBtn_Click(object sender, EventArgs e)
         {
-            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom WHERE classID = 4");
+            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom WHERE (classID = 4 AND roomStatus = 'unoccupied')");
+        }
+
+        private void roomDataList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            roomIDBox.Text = roomDataList.CurrentRow.Cells[0].Value.ToString();
         }
     }
 }
