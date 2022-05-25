@@ -29,15 +29,15 @@ namespace HotelManagement
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(roomForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.allRoomBtn = new System.Windows.Forms.Button();
+            this.suitRoomBtn = new System.Windows.Forms.Button();
+            this.familyRoomBtn = new System.Windows.Forms.Button();
+            this.doubleRoomBtn = new System.Windows.Forms.Button();
+            this.singleRoomBtn = new System.Windows.Forms.Button();
             this.roomDataList = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -49,17 +49,18 @@ namespace HotelManagement
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.transperentTextBox1 = new HotelManagement.transperentTextBox();
-            this.transperentTextBox2 = new HotelManagement.transperentTextBox();
-            this.transperentTextBox3 = new HotelManagement.transperentTextBox();
-            this.transperentTextBox4 = new HotelManagement.transperentTextBox();
-            this.transperentTextBox5 = new HotelManagement.transperentTextBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.xuiObjectEllipse1 = new XanderUI.XUIObjectEllipse();
+            this.transperentTextBox5 = new HotelManagement.transperentTextBox();
+            this.transperentTextBox4 = new HotelManagement.transperentTextBox();
+            this.transperentTextBox3 = new HotelManagement.transperentTextBox();
+            this.transperentTextBox2 = new HotelManagement.transperentTextBox();
+            this.transperentTextBox1 = new HotelManagement.transperentTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.roomDataList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -83,75 +84,81 @@ namespace HotelManagement
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(192)))), ((int)(((byte)(195)))));
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.allRoomBtn);
+            this.panel1.Controls.Add(this.suitRoomBtn);
+            this.panel1.Controls.Add(this.familyRoomBtn);
+            this.panel1.Controls.Add(this.doubleRoomBtn);
+            this.panel1.Controls.Add(this.singleRoomBtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 400);
             this.panel1.TabIndex = 0;
             // 
-            // button5
+            // allRoomBtn
             // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.button5.Location = new System.Drawing.Point(0, 12);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(200, 70);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "ALL ROOM";
-            this.button5.UseVisualStyleBackColor = true;
+            this.allRoomBtn.FlatAppearance.BorderSize = 0;
+            this.allRoomBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.allRoomBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.allRoomBtn.Location = new System.Drawing.Point(0, 12);
+            this.allRoomBtn.Name = "allRoomBtn";
+            this.allRoomBtn.Size = new System.Drawing.Size(200, 70);
+            this.allRoomBtn.TabIndex = 5;
+            this.allRoomBtn.Text = "ALL ROOM";
+            this.allRoomBtn.UseVisualStyleBackColor = true;
+            this.allRoomBtn.Click += new System.EventHandler(this.allRoomBtn_Click);
             // 
-            // button4
+            // suitRoomBtn
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.button4.Location = new System.Drawing.Point(0, 316);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(200, 70);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "SUIT ROOM";
-            this.button4.UseVisualStyleBackColor = true;
+            this.suitRoomBtn.FlatAppearance.BorderSize = 0;
+            this.suitRoomBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.suitRoomBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.suitRoomBtn.Location = new System.Drawing.Point(0, 316);
+            this.suitRoomBtn.Name = "suitRoomBtn";
+            this.suitRoomBtn.Size = new System.Drawing.Size(200, 70);
+            this.suitRoomBtn.TabIndex = 4;
+            this.suitRoomBtn.Text = "SUIT ROOM";
+            this.suitRoomBtn.UseVisualStyleBackColor = true;
+            this.suitRoomBtn.Click += new System.EventHandler(this.suitRoomBtn_Click);
             // 
-            // button3
+            // familyRoomBtn
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.button3.Location = new System.Drawing.Point(0, 240);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 70);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "FAMILY ROOM";
-            this.button3.UseVisualStyleBackColor = true;
+            this.familyRoomBtn.FlatAppearance.BorderSize = 0;
+            this.familyRoomBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.familyRoomBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.familyRoomBtn.Location = new System.Drawing.Point(0, 240);
+            this.familyRoomBtn.Name = "familyRoomBtn";
+            this.familyRoomBtn.Size = new System.Drawing.Size(200, 70);
+            this.familyRoomBtn.TabIndex = 3;
+            this.familyRoomBtn.Text = "FAMILY ROOM";
+            this.familyRoomBtn.UseVisualStyleBackColor = true;
+            this.familyRoomBtn.Click += new System.EventHandler(this.familyRoomBtn_Click);
             // 
-            // button2
+            // doubleRoomBtn
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(0, 164);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 70);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "DOUBLE ROOM";
-            this.button2.UseVisualStyleBackColor = true;
+            this.doubleRoomBtn.FlatAppearance.BorderSize = 0;
+            this.doubleRoomBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.doubleRoomBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.doubleRoomBtn.Location = new System.Drawing.Point(0, 164);
+            this.doubleRoomBtn.Name = "doubleRoomBtn";
+            this.doubleRoomBtn.Size = new System.Drawing.Size(200, 70);
+            this.doubleRoomBtn.TabIndex = 2;
+            this.doubleRoomBtn.Text = "DOUBLE ROOM";
+            this.doubleRoomBtn.UseVisualStyleBackColor = true;
+            this.doubleRoomBtn.Click += new System.EventHandler(this.doubleRoomBtn_Click);
             // 
-            // button1
+            // singleRoomBtn
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(0, 88);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 70);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "SINGLE ROOM";
-            this.button1.UseVisualStyleBackColor = true;
+            this.singleRoomBtn.FlatAppearance.BorderSize = 0;
+            this.singleRoomBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.singleRoomBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.singleRoomBtn.Location = new System.Drawing.Point(0, 88);
+            this.singleRoomBtn.Name = "singleRoomBtn";
+            this.singleRoomBtn.Size = new System.Drawing.Size(200, 70);
+            this.singleRoomBtn.TabIndex = 1;
+            this.singleRoomBtn.Text = "SINGLE ROOM";
+            this.singleRoomBtn.UseVisualStyleBackColor = true;
+            this.singleRoomBtn.Click += new System.EventHandler(this.singleRoomBtn_Click);
             // 
             // roomDataList
             // 
@@ -160,24 +167,24 @@ namespace HotelManagement
             this.roomDataList.AllowUserToResizeColumns = false;
             this.roomDataList.AllowUserToResizeRows = false;
             this.roomDataList.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.roomDataList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.roomDataList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.roomDataList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.roomDataList.ColumnHeadersVisible = false;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.roomDataList.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.roomDataList.DefaultCellStyle = dataGridViewCellStyle12;
             this.roomDataList.Location = new System.Drawing.Point(573, 52);
             this.roomDataList.Name = "roomDataList";
             this.roomDataList.RowHeadersVisible = false;
@@ -280,60 +287,10 @@ namespace HotelManagement
             this.pictureBox10.TabIndex = 11;
             this.pictureBox10.TabStop = false;
             // 
-            // transperentTextBox1
-            // 
-            this.transperentTextBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.transperentTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.transperentTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transperentTextBox1.Location = new System.Drawing.Point(386, 62);
-            this.transperentTextBox1.Name = "transperentTextBox1";
-            this.transperentTextBox1.Size = new System.Drawing.Size(181, 22);
-            this.transperentTextBox1.TabIndex = 12;
-            // 
-            // transperentTextBox2
-            // 
-            this.transperentTextBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.transperentTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.transperentTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transperentTextBox2.Location = new System.Drawing.Point(322, 121);
-            this.transperentTextBox2.Name = "transperentTextBox2";
-            this.transperentTextBox2.Size = new System.Drawing.Size(245, 22);
-            this.transperentTextBox2.TabIndex = 13;
-            // 
-            // transperentTextBox3
-            // 
-            this.transperentTextBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.transperentTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.transperentTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transperentTextBox3.Location = new System.Drawing.Point(414, 182);
-            this.transperentTextBox3.Name = "transperentTextBox3";
-            this.transperentTextBox3.Size = new System.Drawing.Size(153, 22);
-            this.transperentTextBox3.TabIndex = 14;
-            // 
-            // transperentTextBox4
-            // 
-            this.transperentTextBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.transperentTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.transperentTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transperentTextBox4.Location = new System.Drawing.Point(308, 241);
-            this.transperentTextBox4.Name = "transperentTextBox4";
-            this.transperentTextBox4.Size = new System.Drawing.Size(259, 22);
-            this.transperentTextBox4.TabIndex = 15;
-            // 
-            // transperentTextBox5
-            // 
-            this.transperentTextBox5.BackColor = System.Drawing.SystemColors.Control;
-            this.transperentTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.transperentTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transperentTextBox5.Location = new System.Drawing.Point(325, 301);
-            this.transperentTextBox5.Name = "transperentTextBox5";
-            this.transperentTextBox5.Size = new System.Drawing.Size(242, 22);
-            this.transperentTextBox5.TabIndex = 16;
-            // 
             // pictureBox11
             // 
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(26, 13);
+            this.pictureBox11.Location = new System.Drawing.Point(9, 15);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(69, 14);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -343,7 +300,7 @@ namespace HotelManagement
             // pictureBox12
             // 
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(150, 13);
+            this.pictureBox12.Location = new System.Drawing.Point(94, 15);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(63, 14);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -353,7 +310,7 @@ namespace HotelManagement
             // pictureBox13
             // 
             this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(299, 12);
+            this.pictureBox13.Location = new System.Drawing.Point(221, 14);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(129, 17);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -363,7 +320,7 @@ namespace HotelManagement
             // pictureBox14
             // 
             this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(500, 13);
+            this.pictureBox14.Location = new System.Drawing.Point(421, 13);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(86, 14);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -392,6 +349,62 @@ namespace HotelManagement
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(732, 41);
             this.panel2.TabIndex = 22;
+            // 
+            // xuiObjectEllipse1
+            // 
+            this.xuiObjectEllipse1.CornerRadius = 10;
+            this.xuiObjectEllipse1.EffectedControl = null;
+            this.xuiObjectEllipse1.EffectedForm = null;
+            // 
+            // transperentTextBox5
+            // 
+            this.transperentTextBox5.BackColor = System.Drawing.SystemColors.Control;
+            this.transperentTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.transperentTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transperentTextBox5.Location = new System.Drawing.Point(325, 301);
+            this.transperentTextBox5.Name = "transperentTextBox5";
+            this.transperentTextBox5.Size = new System.Drawing.Size(242, 22);
+            this.transperentTextBox5.TabIndex = 16;
+            // 
+            // transperentTextBox4
+            // 
+            this.transperentTextBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.transperentTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.transperentTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transperentTextBox4.Location = new System.Drawing.Point(308, 241);
+            this.transperentTextBox4.Name = "transperentTextBox4";
+            this.transperentTextBox4.Size = new System.Drawing.Size(259, 22);
+            this.transperentTextBox4.TabIndex = 15;
+            // 
+            // transperentTextBox3
+            // 
+            this.transperentTextBox3.BackColor = System.Drawing.SystemColors.Control;
+            this.transperentTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.transperentTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transperentTextBox3.Location = new System.Drawing.Point(414, 182);
+            this.transperentTextBox3.Name = "transperentTextBox3";
+            this.transperentTextBox3.Size = new System.Drawing.Size(153, 22);
+            this.transperentTextBox3.TabIndex = 14;
+            // 
+            // transperentTextBox2
+            // 
+            this.transperentTextBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.transperentTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.transperentTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transperentTextBox2.Location = new System.Drawing.Point(322, 121);
+            this.transperentTextBox2.Name = "transperentTextBox2";
+            this.transperentTextBox2.Size = new System.Drawing.Size(245, 22);
+            this.transperentTextBox2.TabIndex = 13;
+            // 
+            // transperentTextBox1
+            // 
+            this.transperentTextBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.transperentTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.transperentTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transperentTextBox1.Location = new System.Drawing.Point(386, 62);
+            this.transperentTextBox1.Name = "transperentTextBox1";
+            this.transperentTextBox1.Size = new System.Drawing.Size(181, 22);
+            this.transperentTextBox1.TabIndex = 12;
             // 
             // roomForm
             // 
@@ -446,11 +459,11 @@ namespace HotelManagement
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button singleRoomBtn;
+        private System.Windows.Forms.Button allRoomBtn;
+        private System.Windows.Forms.Button suitRoomBtn;
+        private System.Windows.Forms.Button familyRoomBtn;
+        private System.Windows.Forms.Button doubleRoomBtn;
         private System.Windows.Forms.DataGridView roomDataList;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -473,5 +486,6 @@ namespace HotelManagement
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.Panel panel2;
+        private XanderUI.XUIObjectEllipse xuiObjectEllipse1;
     }
 }
