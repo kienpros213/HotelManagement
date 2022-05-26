@@ -15,7 +15,8 @@ namespace HotelManagement
         public roomForm()
         {
             InitializeComponent();
-            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom");
+            reserveIDBox.Text =  customerForm.sendtext;
+        getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom");
             if (roomDataList.Columns.Count > 0)
             {
                 roomDataList.Columns[0].Width = 85;
@@ -67,6 +68,15 @@ namespace HotelManagement
         private void roomDataList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             roomIDBox.Text = roomDataList.CurrentRow.Cells[0].Value.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void roomForm_Load(object sender, EventArgs e)
+        {
         }
     }
 }

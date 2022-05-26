@@ -50,6 +50,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="class\updateReserveData.cs" />
     <Compile Include="Forms\bookingForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,7 +70,7 @@
     <Compile Include="Forms\roomForm.Designer.cs">
       <DependentUpon>roomForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="class\updateData.cs" />
+    <Compile Include="class\updateCusData.cs" />
     <Compile Include="Forms\reportForm.cs">
       <SubType>Form</SubType>
     </Compile>

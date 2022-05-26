@@ -19,7 +19,7 @@ namespace HotelManagement
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            updateData.Update(customerID.Text, customerFName.Text, customerLName.Text, reservation.Text, customerAddress.Text, customerStatus.Text);
+            updateCusData.Update(customerID.Text, customerFName.Text, customerLName.Text, customerAddress.Text, customerStatus.Text);
 
             customerID.Clear();
             customerFName.Clear();

@@ -46,12 +46,12 @@ namespace HotelManagement
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.transperentTextBox5 = new HotelManagement.transperentTextBox();
-            this.transperentTextBox7 = new HotelManagement.transperentTextBox();
+            this.addressBox = new HotelManagement.transperentTextBox();
             this.transperentTextBox6 = new HotelManagement.transperentTextBox();
-            this.transperentTextBox4 = new HotelManagement.transperentTextBox();
-            this.transperentTextBox3 = new HotelManagement.transperentTextBox();
-            this.transperentTextBox2 = new HotelManagement.transperentTextBox();
-            this.transperentTextBox1 = new HotelManagement.transperentTextBox();
+            this.statusBox = new HotelManagement.transperentTextBox();
+            this.lastNameBox = new HotelManagement.transperentTextBox();
+            this.foreNameBox = new HotelManagement.transperentTextBox();
+            this.customerIDBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -83,7 +83,6 @@ namespace HotelManagement
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -235,14 +234,14 @@ namespace HotelManagement
             this.transperentTextBox5.TabIndex = 33;
             this.transperentTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // transperentTextBox7
+            // addressBox
             // 
-            this.transperentTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.transperentTextBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transperentTextBox7.Location = new System.Drawing.Point(880, 166);
-            this.transperentTextBox7.Name = "transperentTextBox7";
-            this.transperentTextBox7.Size = new System.Drawing.Size(237, 22);
-            this.transperentTextBox7.TabIndex = 32;
+            this.addressBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.addressBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addressBox.Location = new System.Drawing.Point(880, 166);
+            this.addressBox.Name = "addressBox";
+            this.addressBox.Size = new System.Drawing.Size(237, 22);
+            this.addressBox.TabIndex = 32;
             // 
             // transperentTextBox6
             // 
@@ -253,55 +252,55 @@ namespace HotelManagement
             this.transperentTextBox6.Size = new System.Drawing.Size(237, 22);
             this.transperentTextBox6.TabIndex = 31;
             // 
-            // transperentTextBox4
+            // statusBox
             // 
-            this.transperentTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.transperentTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transperentTextBox4.Location = new System.Drawing.Point(864, 308);
-            this.transperentTextBox4.Name = "transperentTextBox4";
-            this.transperentTextBox4.Size = new System.Drawing.Size(184, 22);
-            this.transperentTextBox4.TabIndex = 30;
+            this.statusBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.statusBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusBox.Location = new System.Drawing.Point(864, 308);
+            this.statusBox.Name = "statusBox";
+            this.statusBox.Size = new System.Drawing.Size(184, 22);
+            this.statusBox.TabIndex = 30;
             // 
-            // transperentTextBox3
+            // lastNameBox
             // 
-            this.transperentTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.transperentTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transperentTextBox3.Location = new System.Drawing.Point(420, 308);
-            this.transperentTextBox3.Name = "transperentTextBox3";
-            this.transperentTextBox3.Size = new System.Drawing.Size(188, 22);
-            this.transperentTextBox3.TabIndex = 29;
+            this.lastNameBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lastNameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastNameBox.Location = new System.Drawing.Point(420, 308);
+            this.lastNameBox.Name = "lastNameBox";
+            this.lastNameBox.Size = new System.Drawing.Size(188, 22);
+            this.lastNameBox.TabIndex = 29;
             // 
-            // transperentTextBox2
+            // foreNameBox
             // 
-            this.transperentTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.transperentTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transperentTextBox2.Location = new System.Drawing.Point(422, 232);
-            this.transperentTextBox2.Name = "transperentTextBox2";
-            this.transperentTextBox2.Size = new System.Drawing.Size(188, 22);
-            this.transperentTextBox2.TabIndex = 28;
+            this.foreNameBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.foreNameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.foreNameBox.Location = new System.Drawing.Point(422, 232);
+            this.foreNameBox.Name = "foreNameBox";
+            this.foreNameBox.Size = new System.Drawing.Size(188, 22);
+            this.foreNameBox.TabIndex = 28;
             // 
-            // transperentTextBox1
+            // customerIDBox
             // 
-            this.transperentTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.transperentTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transperentTextBox1.Location = new System.Drawing.Point(438, 165);
-            this.transperentTextBox1.Name = "transperentTextBox1";
-            this.transperentTextBox1.Size = new System.Drawing.Size(172, 22);
-            this.transperentTextBox1.TabIndex = 27;
+            this.customerIDBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.customerIDBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customerIDBox.Location = new System.Drawing.Point(438, 166);
+            this.customerIDBox.Name = "customerIDBox";
+            this.customerIDBox.Size = new System.Drawing.Size(172, 22);
+            this.customerIDBox.TabIndex = 35;
             // 
             // customerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1197, 724);
+            this.Controls.Add(this.customerIDBox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.transperentTextBox5);
-            this.Controls.Add(this.transperentTextBox7);
+            this.Controls.Add(this.addressBox);
             this.Controls.Add(this.transperentTextBox6);
-            this.Controls.Add(this.transperentTextBox4);
-            this.Controls.Add(this.transperentTextBox3);
-            this.Controls.Add(this.transperentTextBox2);
-            this.Controls.Add(this.transperentTextBox1);
+            this.Controls.Add(this.statusBox);
+            this.Controls.Add(this.lastNameBox);
+            this.Controls.Add(this.foreNameBox);
             this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.pictureBox11);
@@ -345,19 +344,19 @@ namespace HotelManagement
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private transperentTextBox transperentTextBox1;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private transperentTextBox transperentTextBox7;
+        private transperentTextBox addressBox;
         private transperentTextBox transperentTextBox6;
-        private transperentTextBox transperentTextBox4;
-        private transperentTextBox transperentTextBox3;
-        private transperentTextBox transperentTextBox2;
+        private transperentTextBox statusBox;
+        private transperentTextBox lastNameBox;
+        private transperentTextBox foreNameBox;
         private transperentTextBox transperentTextBox5;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox customerIDBox;
     }
 }
