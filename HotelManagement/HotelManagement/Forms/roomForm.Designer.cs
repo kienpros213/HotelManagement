@@ -56,11 +56,11 @@ namespace HotelManagement
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.reserveIDBox = new System.Windows.Forms.TextBox();
             this.dateOutBox = new HotelManagement.transperentTextBox();
             this.dateInBox = new HotelManagement.transperentTextBox();
             this.reserveDateBox = new HotelManagement.transperentTextBox();
             this.roomIDBox = new HotelManagement.transperentTextBox();
-            this.reserveIDBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.roomDataList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -367,6 +367,15 @@ namespace HotelManagement
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // reserveIDBox
+            // 
+            this.reserveIDBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.reserveIDBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reserveIDBox.Location = new System.Drawing.Point(381, 18);
+            this.reserveIDBox.Name = "reserveIDBox";
+            this.reserveIDBox.Size = new System.Drawing.Size(181, 22);
+            this.reserveIDBox.TabIndex = 23;
+            // 
             // dateOutBox
             // 
             this.dateOutBox.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -411,15 +420,6 @@ namespace HotelManagement
             this.roomIDBox.Size = new System.Drawing.Size(245, 22);
             this.roomIDBox.TabIndex = 13;
             // 
-            // reserveIDBox
-            // 
-            this.reserveIDBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.reserveIDBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reserveIDBox.Location = new System.Drawing.Point(381, 18);
-            this.reserveIDBox.Name = "reserveIDBox";
-            this.reserveIDBox.Size = new System.Drawing.Size(181, 22);
-            this.reserveIDBox.TabIndex = 23;
-            // 
             // roomForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -447,7 +447,6 @@ namespace HotelManagement
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "roomForm";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.roomForm_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.roomDataList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

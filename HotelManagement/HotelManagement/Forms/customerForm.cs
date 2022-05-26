@@ -16,24 +16,22 @@ namespace HotelManagement
         {
             InitializeComponent();
         }
-        public static string sendtext = "";
+        public static string customerText = "";
         private void button1_Click(object sender, EventArgs e)
         {
-            sendtext = customerIDBox.Text;
-           // if (string.IsNullOrWhiteSpace(customerIDBox.Text))
-            //{
-                // Message box
-               // MessageBox.Show("lmao");
-           // }
-           // else
-            //{
-           // updateCusData.Update(customerIDBox.Text, foreNameBox.Text, lastNameBox.Text, addressBox.Text, statusBox.Text);
+            customerText = customerIDBox.Text;
+            if (string.IsNullOrWhiteSpace(customerIDBox.Text))
+            {
+                MessageBox.Show("lmao, điền vào customerID");
+            }
+            else
+            {
+               // updateCusData.Update(customerIDBox.Text, foreNameBox.Text, lastNameBox.Text, addressBox.Text, statusBox.Text);
                 this.Close();
                 roomForm _roomForm = new roomForm();
                 _roomForm.Show();
                 _roomForm.BringToFront();
-
-            //}
+            }
         }
     }
 }
