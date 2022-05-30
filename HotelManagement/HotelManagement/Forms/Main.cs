@@ -72,5 +72,25 @@ namespace HotelManagement
         {
             this.Close();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            bool isOpen = false;
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Name == "occupiedRoomForm")
+                {
+                    isOpen = true;
+                    f.BringToFront();
+                    break;
+                }
+            }
+
+            if (isOpen == false)
+            {
+                occupiedRoomForm _occupiedRoomForm = new occupiedRoomForm();
+                _occupiedRoomForm.Show();
+            }
+        }
     }
 }

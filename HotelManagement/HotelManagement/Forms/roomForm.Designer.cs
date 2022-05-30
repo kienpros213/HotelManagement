@@ -29,10 +29,10 @@ namespace HotelManagement
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(roomForm));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnPanel = new System.Windows.Forms.Panel();
             this.allRoomBtn = new System.Windows.Forms.Button();
             this.suitRoomBtn = new System.Windows.Forms.Button();
             this.familyRoomBtn = new System.Windows.Forms.Button();
@@ -54,14 +54,15 @@ namespace HotelManagement
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.labelPanel = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.reserveIDBox = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.dateOutBox = new HotelManagement.transperentTextBox();
             this.dateInBox = new HotelManagement.transperentTextBox();
             this.reserveDateBox = new HotelManagement.transperentTextBox();
             this.roomIDBox = new HotelManagement.transperentTextBox();
-            this.panel1.SuspendLayout();
+            this.btnPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.roomDataList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -78,22 +79,22 @@ namespace HotelManagement
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.labelPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // btnPanel
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(192)))), ((int)(((byte)(195)))));
-            this.panel1.Controls.Add(this.allRoomBtn);
-            this.panel1.Controls.Add(this.suitRoomBtn);
-            this.panel1.Controls.Add(this.familyRoomBtn);
-            this.panel1.Controls.Add(this.doubleRoomBtn);
-            this.panel1.Controls.Add(this.singleRoomBtn);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 400);
-            this.panel1.TabIndex = 0;
+            this.btnPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(192)))), ((int)(((byte)(195)))));
+            this.btnPanel.Controls.Add(this.allRoomBtn);
+            this.btnPanel.Controls.Add(this.suitRoomBtn);
+            this.btnPanel.Controls.Add(this.familyRoomBtn);
+            this.btnPanel.Controls.Add(this.doubleRoomBtn);
+            this.btnPanel.Controls.Add(this.singleRoomBtn);
+            this.btnPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnPanel.Location = new System.Drawing.Point(0, 0);
+            this.btnPanel.Name = "btnPanel";
+            this.btnPanel.Size = new System.Drawing.Size(200, 401);
+            this.btnPanel.TabIndex = 0;
             // 
             // allRoomBtn
             // 
@@ -168,29 +169,32 @@ namespace HotelManagement
             this.roomDataList.AllowUserToResizeRows = false;
             this.roomDataList.BackgroundColor = System.Drawing.Color.White;
             this.roomDataList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.roomDataList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.roomDataList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.roomDataList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.roomDataList.ColumnHeadersVisible = false;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.roomDataList.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.roomDataList.DefaultCellStyle = dataGridViewCellStyle4;
             this.roomDataList.Location = new System.Drawing.Point(573, 52);
             this.roomDataList.Name = "roomDataList";
+            this.roomDataList.ReadOnly = true;
             this.roomDataList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.roomDataList.RowHeadersVisible = false;
+            this.roomDataList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.roomDataList.RowTemplate.Height = 33;
+            this.roomDataList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.roomDataList.Size = new System.Drawing.Size(697, 348);
             this.roomDataList.TabIndex = 1;
             this.roomDataList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.roomDataList_CellContentClick);
@@ -340,18 +344,18 @@ namespace HotelManagement
             this.pictureBox15.TabIndex = 21;
             this.pictureBox15.TabStop = false;
             // 
-            // panel2
+            // labelPanel
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(192)))), ((int)(((byte)(195)))));
-            this.panel2.Controls.Add(this.pictureBox15);
-            this.panel2.Controls.Add(this.pictureBox11);
-            this.panel2.Controls.Add(this.pictureBox14);
-            this.panel2.Controls.Add(this.pictureBox12);
-            this.panel2.Controls.Add(this.pictureBox13);
-            this.panel2.Location = new System.Drawing.Point(573, 5);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(697, 41);
-            this.panel2.TabIndex = 22;
+            this.labelPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(192)))), ((int)(((byte)(195)))));
+            this.labelPanel.Controls.Add(this.pictureBox15);
+            this.labelPanel.Controls.Add(this.pictureBox11);
+            this.labelPanel.Controls.Add(this.pictureBox14);
+            this.labelPanel.Controls.Add(this.pictureBox12);
+            this.labelPanel.Controls.Add(this.pictureBox13);
+            this.labelPanel.Location = new System.Drawing.Point(573, 5);
+            this.labelPanel.Name = "labelPanel";
+            this.labelPanel.Size = new System.Drawing.Size(697, 41);
+            this.labelPanel.TabIndex = 22;
             // 
             // button1
             // 
@@ -375,6 +379,20 @@ namespace HotelManagement
             this.reserveIDBox.Name = "reserveIDBox";
             this.reserveIDBox.Size = new System.Drawing.Size(181, 22);
             this.reserveIDBox.TabIndex = 23;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(192)))), ((int)(((byte)(195)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(491, 316);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(200, 70);
+            this.button2.TabIndex = 24;
+            this.button2.Text = "state change";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dateOutBox
             // 
@@ -424,10 +442,11 @@ namespace HotelManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1271, 400);
+            this.ClientSize = new System.Drawing.Size(1272, 401);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.reserveIDBox);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.labelPanel);
             this.Controls.Add(this.dateOutBox);
             this.Controls.Add(this.dateInBox);
             this.Controls.Add(this.reserveDateBox);
@@ -443,11 +462,11 @@ namespace HotelManagement
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.roomDataList);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "roomForm";
             this.Text = "Form1";
-            this.panel1.ResumeLayout(false);
+            this.btnPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.roomDataList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -464,8 +483,8 @@ namespace HotelManagement
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.labelPanel.ResumeLayout(false);
+            this.labelPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -473,7 +492,7 @@ namespace HotelManagement
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel btnPanel;
         private System.Windows.Forms.Button singleRoomBtn;
         private System.Windows.Forms.Button allRoomBtn;
         private System.Windows.Forms.Button suitRoomBtn;
@@ -499,8 +518,9 @@ namespace HotelManagement
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel labelPanel;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox reserveIDBox;
+        private System.Windows.Forms.Button button2;
     }
 }

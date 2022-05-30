@@ -14,3 +14,4 @@ D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\o
 D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.customerForm.resources
 D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.roomForm.resources
 D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
+D:\project\C#\Hotel Management\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.occupiedRoomForm.resources

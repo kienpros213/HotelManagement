@@ -10,13 +10,12 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace HotelManagement
 {
-    public partial class roomForm : Form
+    public partial class occupiedRoomForm : Form
     {
-        public static bool checkinState = false;
-        public roomForm()
+        public occupiedRoomForm()
         {
             InitializeComponent();
-            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom WHERE roomStatus = 'unoccupied'");
+            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom WHERE roomStatus = 'occupied'");
             if (roomDataList.Columns.Count > 0)
             {
                 roomDataList.Columns[0].Width = 85;
@@ -39,63 +38,37 @@ namespace HotelManagement
 
         private void allRoomBtn_Click(object sender, EventArgs e)
         {
-            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom WHERE roomStatus = 'unoccupied'");
+            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom WHERE roomStatus = 'occupied'");
         }
 
         private void singleRoomBtn_Click(object sender, EventArgs e)
         {
-            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom WHERE (classID = 1 AND roomStatus = 'unoccupied')");
+            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom WHERE (classID = 1 AND roomStatus = 'occupied')");
         }
 
         private void doubleRoomBtn_Click(object sender, EventArgs e)
         {
-            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom WHERE (classID = 2 AND roomStatus = 'unoccupied')");
+            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom WHERE (classID = 2 AND roomStatus = 'occupied')");
         }
 
         private void familyRoomBtn_Click(object sender, EventArgs e)
         {
-            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom WHERE (classID = 3 AND roomStatus = 'unoccupied')");
+            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom WHERE (classID = 3 AND roomStatus = 'occupied')");
         }
 
         private void suitRoomBtn_Click(object sender, EventArgs e)
         {
-            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom WHERE (classID = 4 AND roomStatus = 'unoccupied')");
+            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom WHERE (classID = 4 AND roomStatus = 'occupied')");
         }
 
         private void roomDataList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            roomIDBox.Text = roomDataList.CurrentRow.Cells[0].Value.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             string customerIDReserve = customerForm.customerText;
             MessageBox.Show(customerIDReserve);
-            updateReserveData.Update(reserveIDBox.Text, customerIDReserve, roomIDBox.Text, reserveDateBox.Text, dateInBox.Text, dateOutBox.Text);
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (checkinState == true)
-            {
-                checkinState = false;
-                MessageBox.Show("false");
-                btnPanel.BackColor = Color.FromArgb(136, 192, 195);
-                labelPanel.BackColor = Color.FromArgb(136, 192, 195);
-
-            }
-            else
-            {
-                checkinState = true;
-                MessageBox.Show("true");
-                btnPanel.BackColor = ColorTranslator.FromHtml("#F47C7C");
-                labelPanel.BackColor = ColorTranslator.FromHtml("#F47C7C");
-            }
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
         }
     }
 }
