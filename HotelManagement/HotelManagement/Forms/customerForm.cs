@@ -26,7 +26,7 @@ namespace HotelManagement
             }
             else
             {
-               // updateCusData.Update(customerIDBox.Text, foreNameBox.Text, lastNameBox.Text, addressBox.Text, statusBox.Text);
+                updateCusData.Update(customerIDBox.Text, foreNameBox.Text, lastNameBox.Text, addressBox.Text, statusBox.Text);
                 this.Close();
                 roomForm _roomForm = new roomForm();
                 _roomForm.Show();

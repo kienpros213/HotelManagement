@@ -513,16 +513,6 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Button x:Name="button_Copy" Content="FIRST STATE" Margin="291,321,781,10" Width="200" Height="70" Background="#FF88C0C3" BorderThickness="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" RenderTransformOrigin="0.5,0.5"  >
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Button.RenderTransform>
-        </Button>
         <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="363,145.5,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5">
             <TextBox.RenderTransform>
                 <TransformGroup>
@@ -553,5 +543,15 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
+        <Button x:Name="button_Copy" Content="FIRST STATE" Margin="291,321,781,10" Width="200" Height="70" Background="#FF88C0C3" BorderThickness="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" RenderTransformOrigin="0.5,0.5"  >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
     </Grid>
 </UserControl>

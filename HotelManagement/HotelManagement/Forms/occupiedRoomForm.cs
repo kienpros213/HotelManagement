@@ -15,24 +15,27 @@ namespace HotelManagement
         public occupiedRoomForm()
         {
             InitializeComponent();
-            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom WHERE roomStatus = 'occupied'");
+            getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblReservation");
             if (roomDataList.Columns.Count > 0)
             {
-                roomDataList.Columns[0].Width = 85;
+                roomDataList.Columns[0].Width = 50;
                 roomDataList.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-                roomDataList.Columns[1].Width = 77;
+                roomDataList.Columns[1].Width = 50;
                 roomDataList.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-                roomDataList.Columns[2].Width = 250;
+                roomDataList.Columns[2].Width = 120;
                 roomDataList.Columns[2].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-                roomDataList.Columns[3].Width = 115;
+                roomDataList.Columns[3].Width = 120;
                 roomDataList.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
 
-                roomDataList.Columns[4].Width = 150;
+                roomDataList.Columns[4].Width = 120;
                 roomDataList.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+                roomDataList.Columns[5].Width = 120;
+                roomDataList.Columns[5].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             }
         }
 
@@ -69,6 +72,11 @@ namespace HotelManagement
         {
             string customerIDReserve = customerForm.customerText;
             MessageBox.Show(customerIDReserve);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            updateHistory.Update("2");
         }
     }
 }
