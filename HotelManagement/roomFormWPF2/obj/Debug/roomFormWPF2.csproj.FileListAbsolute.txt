@@ -1,0 +1,12 @@
+D:\project\C#\Hotel Management\HotelManagement\HotelManagement\roomFormWPF2\bin\Debug\roomFormWPF2.dll
+D:\project\C#\Hotel Management\HotelManagement\HotelManagement\roomFormWPF2\bin\Debug\roomFormWPF2.pdb
+D:\project\C#\Hotel Management\HotelManagement\HotelManagement\roomFormWPF2\obj\Debug\roomFormWPF2.g.cs
+D:\project\C#\Hotel Management\HotelManagement\HotelManagement\roomFormWPF2\obj\Debug\roomFormWPF2_MarkupCompile.cache
+D:\project\C#\Hotel Management\HotelManagement\HotelManagement\roomFormWPF2\obj\Debug\roomFormWPF2_MarkupCompile.lref
+D:\project\C#\Hotel Management\HotelManagement\HotelManagement\roomFormWPF2\obj\Debug\roomFormWPF2.baml
+D:\project\C#\Hotel Management\HotelManagement\HotelManagement\roomFormWPF2\obj\Debug\roomFormWPF2.g.resources
+D:\project\C#\Hotel Management\HotelManagement\HotelManagement\roomFormWPF2\obj\Debug\roomFormWPF2.Properties.Resources.resources
+D:\project\C#\Hotel Management\HotelManagement\HotelManagement\roomFormWPF2\obj\Debug\roomFormWPF2.csproj.GenerateResource.cache
+D:\project\C#\Hotel Management\HotelManagement\HotelManagement\roomFormWPF2\obj\Debug\roomFormWPF2.csproj.CoreCompileInputs.cache
+D:\project\C#\Hotel Management\HotelManagement\HotelManagement\roomFormWPF2\obj\Debug\roomFormWPF2.dll
+D:\project\C#\Hotel Management\HotelManagement\HotelManagement\roomFormWPF2\obj\Debug\roomFormWPF2.pdb
