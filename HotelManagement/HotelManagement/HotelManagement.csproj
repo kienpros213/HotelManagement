@@ -59,18 +59,18 @@
     <Compile Include="class\getReservationData.cs" />
     <Compile Include="class\updateHistory.cs" />
     <Compile Include="class\updateReserveData.cs" />
-    <Compile Include="Forms\bookingForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\bookingForm.Designer.cs">
-      <DependentUpon>bookingForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="class\getDataGridView.cs" />
     <Compile Include="Forms\customerForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\customerForm.Designer.cs">
       <DependentUpon>customerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\testForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\testForm.Designer.cs">
+      <DependentUpon>testForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\occupiedRoomForm.cs">
       <SubType>Form</SubType>
@@ -111,11 +111,11 @@
     <Compile Include="userControls\transperentTextBox.Designer.cs">
       <DependentUpon>transperentTextBox.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\bookingForm.resx">
-      <DependentUpon>bookingForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\customerForm.resx">
       <DependentUpon>customerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\testForm.resx">
+      <DependentUpon>testForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\occupiedRoomForm.resx">
       <DependentUpon>occupiedRoomForm.cs</DependentUpon>

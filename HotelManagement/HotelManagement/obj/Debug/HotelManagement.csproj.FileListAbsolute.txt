@@ -35,3 +35,4 @@ D:\Project\C#\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelMan
 D:\Project\C#\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
 D:\Project\C#\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
 D:\Project\C#\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.reservationCheck.resources
+D:\Project\C#\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.testForm.resources

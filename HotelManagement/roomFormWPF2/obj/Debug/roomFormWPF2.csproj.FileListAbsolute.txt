@@ -22,3 +22,5 @@ D:\Project\C#\HotelManagement\HotelManagement\roomFormWPF2\obj\Debug\roomFormWPF
 D:\Project\C#\HotelManagement\HotelManagement\roomFormWPF2\obj\Debug\roomFormWPF2.csproj.CoreCompileInputs.cache
 D:\Project\C#\HotelManagement\HotelManagement\roomFormWPF2\obj\Debug\roomFormWPF2.dll
 D:\Project\C#\HotelManagement\HotelManagement\roomFormWPF2\obj\Debug\roomFormWPF2.pdb
+D:\Project\C#\HotelManagement\HotelManagement\roomFormWPF2\obj\Debug\customerButton.g.cs
+D:\Project\C#\HotelManagement\HotelManagement\roomFormWPF2\obj\Debug\customerButton.baml

@@ -1,0 +1,57 @@
+﻿<UserControl x:Name="customeButton" x:Class="roomFormWPF2.customerButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:roomFormWPF2"
+             mc:Ignorable="d" 
+             d:DesignHeight="311.101" Width="1140" Height="409">
+    <UserControl.Resources>
+        <Storyboard x:Key="EASING">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="rectangle">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="200">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="EASING_Copy1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="rectangle">
+                <SplineDoubleKeyFrame KeyTime="0" Value="200"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="IDLE">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="rectangle">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="UIElement.MouseEnter">
+            <BeginStoryboard x:Name="EASING_BeginStoryboard" Storyboard="{StaticResource EASING}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseLeave">
+            <BeginStoryboard x:Name="EASING_Copy1_BeginStoryboard" Storyboard="{StaticResource EASING_Copy1}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <PauseStoryboard BeginStoryboardName="EASING_BeginStoryboard"/>
+            <BeginStoryboard Storyboard="{StaticResource IDLE}"/>
+        </EventTrigger>
+    </UserControl.Triggers>
+    <Grid x:Name="grid" Height="406" VerticalAlignment="Top" Width="1140" HorizontalAlignment="Left">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="39*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200"/>
+        <Rectangle x:Name="rectangle" Fill="#FF4EDD4F" HorizontalAlignment="Left" Height="70" Stroke="Black" VerticalAlignment="Top" Width="200"/>
+        <Label Content="ALL ROOM" HorizontalAlignment="Left" Margin="36.13,13.329,0,0" VerticalAlignment="Top" FontSize="24"/>
+    </Grid>
+</UserControl>

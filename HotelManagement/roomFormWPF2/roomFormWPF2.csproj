@@ -48,10 +48,17 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="customerButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="roomFormWPF2.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="customerButton.xaml.cs">
+      <DependentUpon>customerButton.xaml</DependentUpon>
+    </Compile>
     <Compile Include="roomFormWPF2.xaml.cs">
       <DependentUpon>roomFormWPF2.xaml</DependentUpon>
       <SubType>Code</SubType>

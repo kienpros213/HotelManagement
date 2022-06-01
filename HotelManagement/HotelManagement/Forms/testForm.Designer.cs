@@ -1,7 +1,7 @@
 ﻿
 namespace HotelManagement
 {
-    partial class occupiedRoomForm
+    partial class testForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,8 @@ namespace HotelManagement
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(occupiedRoomForm));
             this.roomDataList = new System.Windows.Forms.DataGridView();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
@@ -40,12 +40,8 @@ namespace HotelManagement
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.singleRoomBtn = new System.Windows.Forms.Button();
-            this.doubleRoomBtn = new System.Windows.Forms.Button();
-            this.familyRoomBtn = new System.Windows.Forms.Button();
-            this.suitRoomBtn = new System.Windows.Forms.Button();
-            this.allRoomBtn = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
+            this.customerButton1 = new roomFormWPF2.customerButton();
             ((System.ComponentModel.ISupportInitialize)(this.roomDataList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
@@ -53,7 +49,6 @@ namespace HotelManagement
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // roomDataList
@@ -64,24 +59,24 @@ namespace HotelManagement
             this.roomDataList.AllowUserToResizeRows = false;
             this.roomDataList.BackgroundColor = System.Drawing.Color.White;
             this.roomDataList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.roomDataList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.roomDataList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.roomDataList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.roomDataList.ColumnHeadersVisible = false;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.roomDataList.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.roomDataList.DefaultCellStyle = dataGridViewCellStyle2;
             this.roomDataList.Location = new System.Drawing.Point(206, 52);
             this.roomDataList.Name = "roomDataList";
             this.roomDataList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -169,94 +164,24 @@ namespace HotelManagement
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // singleRoomBtn
+            // elementHost1
             // 
-            this.singleRoomBtn.FlatAppearance.BorderSize = 0;
-            this.singleRoomBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.singleRoomBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.singleRoomBtn.Location = new System.Drawing.Point(0, 88);
-            this.singleRoomBtn.Name = "singleRoomBtn";
-            this.singleRoomBtn.Size = new System.Drawing.Size(200, 70);
-            this.singleRoomBtn.TabIndex = 1;
-            this.singleRoomBtn.Text = "SINGLE ROOM";
-            this.singleRoomBtn.UseVisualStyleBackColor = true;
-            this.singleRoomBtn.Click += new System.EventHandler(this.singleRoomBtn_Click);
-            // 
-            // doubleRoomBtn
-            // 
-            this.doubleRoomBtn.FlatAppearance.BorderSize = 0;
-            this.doubleRoomBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.doubleRoomBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.doubleRoomBtn.Location = new System.Drawing.Point(0, 164);
-            this.doubleRoomBtn.Name = "doubleRoomBtn";
-            this.doubleRoomBtn.Size = new System.Drawing.Size(200, 70);
-            this.doubleRoomBtn.TabIndex = 2;
-            this.doubleRoomBtn.Text = "DOUBLE ROOM";
-            this.doubleRoomBtn.UseVisualStyleBackColor = true;
-            this.doubleRoomBtn.Click += new System.EventHandler(this.doubleRoomBtn_Click);
-            // 
-            // familyRoomBtn
-            // 
-            this.familyRoomBtn.FlatAppearance.BorderSize = 0;
-            this.familyRoomBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.familyRoomBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.familyRoomBtn.Location = new System.Drawing.Point(0, 240);
-            this.familyRoomBtn.Name = "familyRoomBtn";
-            this.familyRoomBtn.Size = new System.Drawing.Size(200, 70);
-            this.familyRoomBtn.TabIndex = 3;
-            this.familyRoomBtn.Text = "FAMILY ROOM";
-            this.familyRoomBtn.UseVisualStyleBackColor = true;
-            this.familyRoomBtn.Click += new System.EventHandler(this.familyRoomBtn_Click);
-            // 
-            // suitRoomBtn
-            // 
-            this.suitRoomBtn.FlatAppearance.BorderSize = 0;
-            this.suitRoomBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.suitRoomBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.suitRoomBtn.Location = new System.Drawing.Point(0, 316);
-            this.suitRoomBtn.Name = "suitRoomBtn";
-            this.suitRoomBtn.Size = new System.Drawing.Size(200, 70);
-            this.suitRoomBtn.TabIndex = 4;
-            this.suitRoomBtn.Text = "SUIT ROOM";
-            this.suitRoomBtn.UseVisualStyleBackColor = true;
-            this.suitRoomBtn.Click += new System.EventHandler(this.suitRoomBtn_Click);
-            // 
-            // allRoomBtn
-            // 
-            this.allRoomBtn.FlatAppearance.BorderSize = 0;
-            this.allRoomBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.allRoomBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.allRoomBtn.Location = new System.Drawing.Point(0, 12);
-            this.allRoomBtn.Name = "allRoomBtn";
-            this.allRoomBtn.Size = new System.Drawing.Size(200, 70);
-            this.allRoomBtn.TabIndex = 5;
-            this.allRoomBtn.Text = "ALL ROOM";
-            this.allRoomBtn.UseVisualStyleBackColor = true;
-            this.allRoomBtn.Click += new System.EventHandler(this.allRoomBtn_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(192)))), ((int)(((byte)(195)))));
-            this.panel1.Controls.Add(this.allRoomBtn);
-            this.panel1.Controls.Add(this.suitRoomBtn);
-            this.panel1.Controls.Add(this.familyRoomBtn);
-            this.panel1.Controls.Add(this.doubleRoomBtn);
-            this.panel1.Controls.Add(this.singleRoomBtn);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 406);
-            this.panel1.TabIndex = 0;
+            this.elementHost1.Location = new System.Drawing.Point(3, 18);
+            this.elementHost1.Name = "elementHost1";
+            this.elementHost1.Size = new System.Drawing.Size(200, 70);
+            this.elementHost1.TabIndex = 23;
+            this.elementHost1.Text = "elementHost1";
+            this.elementHost1.Child = this.customerButton1;
             // 
             // occupiedRoomForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1140, 406);
+            this.Controls.Add(this.elementHost1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.roomDataList);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "occupiedRoomForm";
             this.Text = "Form1";
@@ -268,7 +193,6 @@ namespace HotelManagement
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -282,11 +206,7 @@ namespace HotelManagement
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button singleRoomBtn;
-        private System.Windows.Forms.Button doubleRoomBtn;
-        private System.Windows.Forms.Button familyRoomBtn;
-        private System.Windows.Forms.Button suitRoomBtn;
-        private System.Windows.Forms.Button allRoomBtn;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Integration.ElementHost elementHost1;
+        private roomFormWPF2.customerButton customerButton1;
     }
 }
