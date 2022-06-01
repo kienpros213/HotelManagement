@@ -73,28 +73,5 @@ namespace HotelManagement
             updateReserveData.Update(reserveIDBox.Text, customerIDReserve, roomIDBox.Text, reserveDateBox.Text, dateInBox.Text, dateOutBox.Text);
             updateReserveData.UpdateRoomStatus(roomIDBox.Text);
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (checkinState == true)
-            {
-                checkinState = false;
-                MessageBox.Show("false");
-                btnPanel.BackColor = Color.FromArgb(136, 192, 195);
-                labelPanel.BackColor = Color.FromArgb(136, 192, 195);
-            }
-            else
-            {
-                checkinState = true;
-                MessageBox.Show("true");
-                btnPanel.BackColor = ColorTranslator.FromHtml("#F47C7C");
-                labelPanel.BackColor = ColorTranslator.FromHtml("#F47C7C");
-            }
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-        }
     }
 }

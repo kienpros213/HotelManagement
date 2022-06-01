@@ -12,9 +12,9 @@ namespace HotelManagement
 {
     public class getReservationData
     {
-        public static void getData(System.Windows.Forms.TextBox _reservationIDBox, System.Windows.Forms.TextBox _customerIDBox)
+        public static void getData(System.Windows.Forms.TextBox _reservationIDBox, System.Windows.Forms.TextBox _customerIDBox, string _customerID)
         {
-            string sqlstring = "SELECT * FROM tblReservation";
+            string sqlstring = "SELECT * FROM reservationDataView WHERE customerID = '" + _customerID + "'";
             SqlConnection con = new SqlConnection("Data Source=LAPTOP-VNMEN35T;Initial Catalog=HotelDatabase;Integrated Security=True");
             SqlCommand command = new SqlCommand(sqlstring, con);
             con.Open();

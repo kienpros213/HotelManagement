@@ -12,10 +12,14 @@ namespace HotelManagement
 {
     public partial class occupiedRoomForm : Form
     {
+        public string tempCusID;
         public occupiedRoomForm()
         {
             InitializeComponent();
             getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblReservation");
+            
+            //COLUMN SIZE
+            
             if (roomDataList.Columns.Count > 0)
             {
                 roomDataList.Columns[0].Width = 50;
@@ -38,6 +42,8 @@ namespace HotelManagement
                 roomDataList.Columns[5].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             }
         }
+
+            //BUTTON CLICK
 
         private void allRoomBtn_Click(object sender, EventArgs e)
         {
@@ -66,6 +72,7 @@ namespace HotelManagement
 
         private void roomDataList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            tempCusID = roomDataList.CurrentRow.Cells[0].Value.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)

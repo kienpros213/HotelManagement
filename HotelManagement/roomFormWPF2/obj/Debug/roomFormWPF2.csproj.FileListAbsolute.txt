@@ -12,7 +12,6 @@ D:\project\C#\Hotel Management\HotelManagement\HotelManagement\roomFormWPF2\obj\
 D:\project\C#\Hotel Management\HotelManagement\HotelManagement\roomFormWPF2\obj\Debug\roomFormWPF2.pdb
 D:\Project\C#\HotelManagement\HotelManagement\roomFormWPF2\bin\Debug\roomFormWPF2.dll
 D:\Project\C#\HotelManagement\HotelManagement\roomFormWPF2\bin\Debug\roomFormWPF2.pdb
-D:\Project\C#\HotelManagement\HotelManagement\roomFormWPF2\obj\Debug\roomFormWPF2.csproj.AssemblyReference.cache
 D:\Project\C#\HotelManagement\HotelManagement\roomFormWPF2\obj\Debug\roomFormWPF2.g.cs
 D:\Project\C#\HotelManagement\HotelManagement\roomFormWPF2\obj\Debug\roomFormWPF2_MarkupCompile.cache
 D:\Project\C#\HotelManagement\HotelManagement\roomFormWPF2\obj\Debug\roomFormWPF2_MarkupCompile.lref

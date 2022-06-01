@@ -7,23 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace HotelManagement
 {
-    public partial class bookingForm : Form
+    public partial class reservationCheck : Form
     {
-        public bookingForm()
+        public reservationCheck()
         {
             InitializeComponent();
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            dataGridView.Refresh();
         }
     }
 }
