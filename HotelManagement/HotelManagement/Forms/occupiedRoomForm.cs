@@ -12,7 +12,6 @@ namespace HotelManagement
 {
     public partial class occupiedRoomForm : Form
     {
-        public string tempCusID;
         public occupiedRoomForm()
         {
             InitializeComponent();
@@ -70,9 +69,28 @@ namespace HotelManagement
             getDataGridView.bindGrid(roomDataList, "SELECT * FROM tblRoom WHERE (classID = 4 AND roomStatus = 'occupied')");
         }
 
+        public static string tempCusID;
+
         private void roomDataList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             tempCusID = roomDataList.CurrentRow.Cells[0].Value.ToString();
+
+            bool isOpen = false;
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Name == "reserveCheck")
+                {
+                    isOpen = true;
+                    f.BringToFront();
+                    break;
+                }
+            }
+
+            if (isOpen == false)
+            {
+                reservationCheck reserveCheck = new reservationCheck();
+                reserveCheck.Show();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

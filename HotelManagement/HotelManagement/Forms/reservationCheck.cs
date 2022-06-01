@@ -15,6 +15,18 @@ namespace HotelManagement
         public reservationCheck()
         {
             InitializeComponent();
+            showDate();
+        }
+
+        private void showDate()
+        {
+            string cusPar = occupiedRoomForm.tempCusID;
+            getReservationData.getData(cusPar, cusID, reserveID, roomID, reserveDate, dateIn, dateOut, fName, lName, cusAddress);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

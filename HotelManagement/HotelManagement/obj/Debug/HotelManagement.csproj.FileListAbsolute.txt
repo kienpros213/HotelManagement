@@ -23,7 +23,6 @@ D:\Project\C#\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelMan
 D:\Project\C#\HotelManagement\HotelManagement\HotelManagement\bin\Debug\roomFormWPF2.dll
 D:\Project\C#\HotelManagement\HotelManagement\HotelManagement\bin\Debug\roomFormWPF2.pdb
 D:\Project\C#\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
-D:\Project\C#\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.bookingForm.resources
 D:\Project\C#\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.customerForm.resources
 D:\Project\C#\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.occupiedRoomForm.resources
 D:\Project\C#\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.roomForm.resources
