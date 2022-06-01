@@ -27,14 +27,14 @@ namespace HotelManagement
                 roomDataList.Columns[2].Width = 120;
                 roomDataList.Columns[2].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-                roomDataList.Columns[3].Width = 120;
+                roomDataList.Columns[3].Width = 150;
                 roomDataList.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
 
-                roomDataList.Columns[4].Width = 120;
+                roomDataList.Columns[4].Width = 150;
                 roomDataList.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-                roomDataList.Columns[5].Width = 120;
+                roomDataList.Columns[5].Width = 150;
                 roomDataList.Columns[5].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             }
         }

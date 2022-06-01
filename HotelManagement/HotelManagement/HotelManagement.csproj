@@ -56,6 +56,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="class\getReservationData.cs" />
     <Compile Include="class\updateHistory.cs" />
     <Compile Include="class\updateReserveData.cs" />
     <Compile Include="Forms\bookingForm.cs">

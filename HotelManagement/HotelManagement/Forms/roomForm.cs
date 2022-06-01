@@ -70,8 +70,8 @@ namespace HotelManagement
         private void button1_Click(object sender, EventArgs e)
         {
             string customerIDReserve = customerForm.customerText;
-            MessageBox.Show(customerIDReserve);
             updateReserveData.Update(reserveIDBox.Text, customerIDReserve, roomIDBox.Text, reserveDateBox.Text, dateInBox.Text, dateOutBox.Text);
+            updateReserveData.UpdateRoomStatus(roomIDBox.Text);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -82,7 +82,6 @@ namespace HotelManagement
                 MessageBox.Show("false");
                 btnPanel.BackColor = Color.FromArgb(136, 192, 195);
                 labelPanel.BackColor = Color.FromArgb(136, 192, 195);
-
             }
             else
             {

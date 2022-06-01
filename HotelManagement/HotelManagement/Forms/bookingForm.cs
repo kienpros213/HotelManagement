@@ -16,17 +16,10 @@ namespace HotelManagement
         public bookingForm()
         {
             InitializeComponent();
+            getReservationData.getData(customerID, customerFName);
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            updateCusData.Update(customerID.Text, customerFName.Text, customerLName.Text, customerAddress.Text, customerStatus.Text);
-
-            customerID.Clear();
-            customerFName.Clear();
-            customerLName.Clear();
-            reservation.Clear();
-            customerAddress.Clear();
-            customerStatus.Clear();
         }
 
         private void button2_Click(object sender, EventArgs e)
